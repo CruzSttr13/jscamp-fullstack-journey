@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Registro (con CSS)</title>
+  <link rel="stylesheet" href="04-form.css">
+</head>
+<body>
+  <main>
+    <h1>Formulario de Registro</h1>
+    <p class="subtitle">Solo práctica, no se envía a ningún servidor.</p>
+
+    <form action="#" method="post">
+      <div class="field">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+
+      <div class="field">
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="field">
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+
+      <fieldset>
+        <legend>Género</legend>
+        <label><input type="radio" name="genero" value="femenino"> Femenino</label>
+        <label><input type="radio" name="genero" value="masculino"> Masculino</label>
+        <label><input type="radio" name="genero" value="otro"> Otro / Prefiero no decir</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Intereses</legend>
+        <label><input type="checkbox" name="intereses" value="programacion"> Programación</label>
+        <label><input type="checkbox" name="intereses" value="videojuegos"> Videojuegos</label>
+        <label><input type="checkbox" name="intereses" value="historia"> Historia</label>
+      </fieldset>
+
+      <div class="field">
+        <label for="pais">País</label>
+        <select id="pais" name="pais">
+          <option value="">Selecciona tu país</option>
+          <option value="mx">México</option>
+          <option value="ar">Argentina</option>
+          <option value="es">España</option>
+          <option value="otro">Otro</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="fecha-nacimiento">Fecha de nacimiento</label>
+        <input type="date" id="fecha-nacimiento" name="fecha-nacimiento">
+      </div>
+
+      <div class="field">
+        <label for="mensaje">Sobre ti</label>
+        <textarea id="mensaje" name="mensaje" rows="4"
+          placeholder="Cuéntame algo sobre ti..."></textarea>
+      </div>
+
+      <div class="buttons">
+        <button type="submit">Registrarme</button>
+        <button type="reset">Limpiar</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>

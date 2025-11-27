@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog de Historia (con CSS)</title>
+  <link rel="stylesheet" href="02-blog.css">
+</head>
+<body>
+  <header>
+    <h1>Blog de Historia</h1>
+    <nav>
+      <ul>
+        <!--
+          Estos enlaces son solo de ejemplo, ajústalos si cambias rutas.
+          "../001 html/..." significa: sube una carpeta y entra a 001 html.
+        -->
+        <li><a href="../001 html/01-about.html">Sobre mí (HTML puro)</a></li>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#articulo-principal">Artículo</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article id="articulo-principal">
+      <header>
+        <h2>La Batalla de Stalingrado</h2>
+        <p class="meta">Publicado por Estrella · 27 de noviembre de 2025</p>
+      </header>
+
+      <section>
+        <h3>Contexto</h3>
+        <p>
+          La batalla de Stalingrado fue uno de los puntos de inflexión de la Segunda Guerra Mundial.
+          Se libró entre 1942 y 1943 entre las fuerzas de la Alemania Nazi y la Unión Soviética.
+        </p>
+      </section>
+
+      <section>
+        <h3>Importancia</h3>
+        <p>
+          La derrota alemana en Stalingrado marcó el inicio de una gran ofensiva soviética hacia el oeste.
+        </p>
+
+        <blockquote>
+          “Ningún soldado alemán abandonará la ciudad de Stalingrado salvo que esté herido.”
+          <br>
+          <span class="quote-author">— Adolf Hitler (orden histórica)</span>
+        </blockquote>
+
+        <p>
+          Algunos historiadores consideran que Stalingrado fue <q>el principio del fin</q> para el Tercer Reich.
+        </p>
+      </section>
+    </article>
+
+    <aside>
+      <h3>Datos curiosos</h3>
+      <ul>
+        <li>La batalla duró aproximadamente 5 meses, 1 semana y 3 días.</li>
+        <li>Se estima que hubo más de 2 millones de bajas entre ambos bandos.</li>
+        <li>Stalingrado hoy se llama Volgogrado.</li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Blog de Historia por Estrella</p>
+  </footer>
+</body>
+</html>

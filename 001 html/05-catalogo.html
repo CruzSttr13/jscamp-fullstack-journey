@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Catálogo de Videojuegos</title>
+</head>
+<body>
+  <header>
+    <h1>Catálogo de Videojuegos Favoritos</h1>
+    <p>
+      <!--
+        En este proyecto practicamos:
+        - Tablas
+        - Multimedia (video, audio)
+        - figure / figcaption
+      -->
+      Lista de algunos juegos con sus datos básicos.
+    </p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Tabla de juegos</h2>
+
+      <!--
+        <table> define una tabla.
+        <thead> encabezado de la tabla.
+        <tbody> cuerpo de la tabla.
+        <tr> fila.
+        <th> celda de encabezado.
+        <td> celda normal.
+      -->
+      <table border="1">
+        <!--
+          border="1" es viejo estilo, se usaba para ver la tabla claramente.
+          En proyectos reales se haría con CSS, pero aquí lo usamos para verla sin CSS.
+        -->
+        <caption>Listado de juegos</caption>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Año</th>
+            <th>Género</th>
+            <th>Plataforma</th>
+            <th>Calificación (personal)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>The Witcher 3</td>
+            <td>2015</td>
+            <td>RPG</td>
+            <td>PC / Consolas</td>
+            <td>10/10</td>
+          </tr>
+          <tr>
+            <td>Hollow Knight</td>
+            <td>2017</td>
+            <td>Metroidvania</td>
+            <td>PC / Consolas</td>
+            <td>9/10</td>
+          </tr>
+          <tr>
+            <td>Portal 2</td>
+            <td>2011</td>
+            <td>Puzzles</td>
+            <td>PC / Consolas</td>
+            <td>9/10</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Video relacionado</h2>
+      <!--
+        Podrías usar <video> con un archivo local:
+        <video controls>
+          <source src="videos/trailer.mp4" type="video/mp4">
+          Tu navegador no soporta el elemento de video.
+        </video>
+
+        Aquí uso un <iframe> para embeber un video de YouTube como ejemplo.
+      -->
+      <figure>
+        <iframe 
+          width="560" 
+          height="315" 
+          src="https://www.youtube.com/embed/5V9Vw0p0Jag" 
+          title="YouTube video player" 
+          frameborder="0"
+          allowfullscreen>
+        </iframe>
+        <!--
+          <figcaption> describe la figura (imagen/video).
+        -->
+        <figcaption>
+          Gameplay / tráiler relacionado con juegos de la lista (ejemplo).
+        </figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Música de fondo (audio)</h2>
+      <!--
+        <audio> para reproducir sonido.
+        controls: muestra los controles de reproducción.
+        src: archivo de audio (en un proyecto real sería un archivo local o un enlace válido).
+      -->
+      <audio controls>
+        <!--
+          Aquí deberías poner un archivo de audio real en tu proyecto,
+          por ejemplo: src="audio/musica-juego.mp3"
+        -->
+        <source src="audio/ejemplo.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+      </audio>
+    </section>
+
+    <section>
+      <h2>Imagen destacada</h2>
+      <!--
+        <figure> agrupa una imagen y su descripción.
+      -->
+      <figure>
+        <img src="https://via.placeholder.com/400x200" alt="Imagen de videojuego">
+        <figcaption>
+          Imagen ilustrativa de un escenario de videojuego (reemplaza esta URL más adelante por una imagen real).
+        </figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p><small>Catálogo creado para practicar tablas y multimedia en HTML.</small></p>
+  </footer>
+</body>
+</html>

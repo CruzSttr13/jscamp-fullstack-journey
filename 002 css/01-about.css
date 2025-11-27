@@ -1,0 +1,151 @@
+/* 
+  RESET BÁSICO
+  Quitamos márgenes y padding por defecto
+  y activamos box-sizing: border-box.
+  Esto hace que width incluya padding y border,
+  lo cual hace los cálculos de tamaño mucho más intuitivos.
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 
+  Estilos globales
+*/
+body {
+  /* Color de fondo suave para que la tarjeta resalte */
+  background-color: #f4f4f5;
+  /* Tipografía base */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #111827;
+  /* Altura mínima para ocupar toda la pantalla */
+  min-height: 100vh;
+
+  /* Centrar el contenido usando Flexbox */
+  display: flex;
+  justify-content: center; /* eje horizontal */
+  align-items: center;     /* eje vertical */
+}
+
+/* 
+  .page envuelve todo, sirve para limitar el ancho
+  y manejar el layout general.
+*/
+.page {
+  width: 100%;
+  max-width: 900px;
+  padding: 2rem;
+}
+
+/* HEADER */
+
+header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  letter-spacing: 0.05em;
+}
+
+.subtitle {
+  margin-top: 0.5rem;
+  color: #6b7280; /* gris suave */
+}
+
+/* TARJETA PRINCIPAL */
+
+.card {
+  background-color: #ffffff;
+  border-radius: 0.75rem;      /* esquinas redondeadas */
+  padding: 2rem;
+  box-shadow: 0 15px 30px rgba(15, 23, 42, 0.12); /* sombra suave */
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Secciones dentro de la tarjeta */
+
+.card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+/* PERFIL */
+
+.perfil {
+  text-align: center;
+}
+
+/* Imagen redonda */
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover; /* rellena el espacio sin deformarse */
+  margin-bottom: 1rem;
+  border: 4px solid #e5e7eb;
+}
+
+/* LISTA DE GUSTOS */
+
+.gustos ul {
+  list-style: disc;        /* viñetas redondas */
+  padding-left: 1.5rem;    /* separación de la izquierda */
+}
+
+.gustos li + li {
+  /* 
+    selector "hermano adyacente":
+    aplica margen-top a todos los <li> que tengan un hermano
+    anterior; o sea, del segundo en adelante.
+  */
+  margin-top: 0.25rem;
+}
+
+/* ENLACES */
+
+a {
+  color: #2563eb;          /* azul */
+  text-decoration: none;   /* quitamos subrayado por defecto */
+  font-weight: 500;
+}
+
+a:hover {
+  /* 
+    pseudo-clase :hover => estilo al pasar el mouse.
+    Esto da feedback visual al usuario.
+  */
+  text-decoration: underline;
+}
+
+/* FOOTER */
+
+footer {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.footer-text {
+  color: #9ca3af;
+  font-size: 0.875rem;
+}
+
+/* 
+  PEQUEÑO RESPONSIVE
+  En pantallas muy pequeñas, reducimos un poco padding y fuente.
+*/
+@media (max-width: 480px) {
+  .card {
+    padding: 1.25rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}

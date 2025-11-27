@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sobre mí - Estrella (con CSS)</title>
+
+  <!-- 
+    Enlazamos el archivo CSS externo.
+    Esto es lo estándar en proyectos reales.
+  -->
+  <link rel="stylesheet" href="./01-about.css">
+</head>
+<body>
+  <!--
+    Usamos una clase .page para poder estilizar
+    el contenedor principal desde CSS.
+  -->
+  <div class="page">
+    <header>
+      <h1>Estrella</h1>
+      <p class="subtitle">Estudiante de Desarrollo Web Full Stack</p>
+    </header>
+
+    <!-- 
+      .card será una "tarjeta" centrada con fondo blanco.
+    -->
+    <main class="card">
+      <section class="perfil">
+        <img 
+          src="https://via.placeholder.com/150" 
+          alt="Foto de Estrella"
+          class="avatar"
+        >
+
+        <h2>¿Quién soy?</h2>
+        <p>
+          Soy estudiante de desarrollo web Full Stack. 
+          Me interesan los <strong>videojuegos</strong>, la <em>historia</em> y los gatos.
+        </p>
+      </section>
+
+      <section class="gustos">
+        <h2>Lo que me gusta</h2>
+        <ul>
+          <li>Programación web</li>
+          <li>Videojuegos</li>
+          <li>Leer sobre la Segunda Guerra Mundial</li>
+        </ul>
+      </section>
+
+      <section class="links">
+        <h2>Recursos</h2>
+        <p>
+          Recurso que uso para aprender:
+          <a href="https://developer.mozilla.org/es/" target="_blank">
+            MDN Web Docs
+          </a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p class="footer-text">
+        Hecho con HTML + CSS como práctica ✨
+      </p>
+    </footer>
+  </div>
+</body>
+</html>

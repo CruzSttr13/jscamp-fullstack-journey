@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Historia - Artículo</title>
+</head>
+<body>
+  <!-- 
+    <header> suele contener el logo, título y navegación principal.
+  -->
+  <header>
+    <h1>Blog de Historia</h1>
+
+    <!--
+      <nav> agrupa enlaces de navegación.
+    -->
+    <nav>
+      <ul>
+        <li><a href="01-about.html">Sobre mí</a></li>
+        <li><a href="02-blog-historia.html">Inicio</a></li>
+        <li><a href="#articulo-principal">Artículo principal</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--
+    <main> contiene el contenido principal de la página.
+    Debe haber solo un <main> por documento.
+  -->
+  <main>
+    <!--
+      <article> representa contenido independiente (un post, noticia, etc.)
+    -->
+    <article id="articulo-principal">
+      <header>
+        <h2>La Batalla de Stalingrado</h2>
+        <p><small>Publicado por Estrella - 27 de noviembre de 2025</small></p>
+      </header>
+
+      <!--
+        <section> sirve para agrupar contenido relacionado dentro del artículo.
+      -->
+      <section>
+        <h3>Contexto</h3>
+        <p>
+          La batalla de Stalingrado fue uno de los puntos de inflexión de la Segunda Guerra Mundial.
+          Se libró entre 1942 y 1943 entre las fuerzas de la Alemania Nazi y la Unión Soviética.
+        </p>
+      </section>
+
+      <section>
+        <h3>Importancia</h3>
+        <p>
+          La derrota alemana en Stalingrado marcó el inicio de una gran ofensiva soviética hacia el oeste.
+        </p>
+
+        <!--
+          <blockquote> se usa para citas largas.
+          <q> para citas cortas dentro de un párrafo.
+        -->
+        <blockquote>
+          “Ningún soldado alemán abandonará la ciudad de Stalingrado salvo que esté herido.”
+          <br>
+          <small>— Adolf Hitler (orden histórica)</small>
+        </blockquote>
+
+        <p>
+          Algunos historiadores consideran que Stalingrado fue <q>el principio del fin</q> para el Tercer Reich.
+        </p>
+      </section>
+
+      <footer>
+        <!--
+          El footer de un artículo puede tener info extra:
+          autor, fecha, categorías, etc.
+        -->
+        <p><small>Categorías: Segunda Guerra Mundial, Batallas clave</small></p>
+      </footer>
+    </article>
+
+    <!--
+      <aside> contiene información relacionada pero no parte central del texto.
+      Ej: datos curiosos, enlaces, mini-bios.
+    -->
+    <aside>
+      <h3>Datos curiosos</h3>
+      <ul>
+        <li>La batalla duró aproximadamente 5 meses, 1 semana y 3 días.</li>
+        <li>Se estima que hubo más de 2 millones de bajas entre ambos bandos.</li>
+        <li>Stalingrado hoy se llama Volgogrado.</li>
+      </ul>
+    </aside>
+  </main>
+
+  <!--
+    <footer> es el pie de página del sitio.
+  -->
+  <footer>
+    <p>&copy; 2025 Blog de Historia por Estrella</p>
+    <p><a href="01-about.html">Volver a Sobre mí</a></p>
+  </footer>
+</body>
+</html>
